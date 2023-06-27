@@ -12,25 +12,21 @@ class AppRoutes {
         name: 'Home Screen',
         screen: const HomeScreen()),
     MenuOption(
-        route: 'listview1',
-        icon: Icons.list_alt_rounded,
-        name: 'ListView Version 1',
-        screen: const ListView1Screen()),
-    MenuOption(
-        route: 'listview2',
+        route: 'cantantes',
         icon: Icons.list_outlined,
-        name: 'ListView Version 2',
-        screen: const ListView2Screen()),
+        name: 'Cantantes',
+        screen: const CantantesScreen()),
+    MenuOption(
+        route: 'canciones',
+        icon: Icons.library_music,
+        name: 'Canciones',
+        screen: const CancionesScreen()),
     MenuOption(
         route: 'card',
-        icon: Icons.card_travel_sharp,
+        icon: Icons.list_alt_rounded,
         name: 'Card Screen',
         screen: const CardScreen()),
-    MenuOption(
-        route: 'alert',
-        icon: Icons.add_alert,
-        name: 'Alert Screen',
-        screen: const AlertScreen()),
+
   ];
 
   /*
@@ -51,7 +47,5 @@ class AppRoutes {
     return rutasnuevas;
   }
 
-  static Route<dynamic> onGenerateRoute(RouteSettings settings) {
-    return MaterialPageRoute(builder: (context) => const AlertScreen());
-  }
+
 }

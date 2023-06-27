@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget{
       title: 'Material App',
       initialRoute: AppRoutes.initialRoute,
       routes: AppRoutes.getAppRoutes(),
-      onGenerateRoute: AppRoutes.onGenerateRoute,
       theme: AppTheme.modoClaro
     );
   }

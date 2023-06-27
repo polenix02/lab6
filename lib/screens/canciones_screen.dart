@@ -1,27 +1,25 @@
 import 'package:app_multiplataforma/themes/app_theme.dart';
 import 'package:flutter/material.dart';
 
-class ListView2Screen extends StatelessWidget {
+class CancionesScreen extends StatelessWidget {
   final opciones = const [
-    'Slipknot',
-    'Korn',
-    'Limb Bizkit',
-    'Audioslave',
-    'System of a down',
-    'Mudayve',
-    'CDK'
+    'Señorita',
+    'Attention',
+    'Perfect',
+    'Shape of You',
+    'Animals'
   ];
-  const ListView2Screen({Key? key}) : super(key: key);
+  const CancionesScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('List View Version 2'),
+          title: const Text('Canciones'),
         ),
         body: ListView.separated(
             itemBuilder: (context, index) => ListTile(
-                leading: const Icon(Icons.accessibility_new, color: AppTheme.primary),
+                leading: const Icon(Icons.music_note, color: AppTheme.primary),
                 title: Text(opciones[index]),
                 trailing: const Icon(Icons.arrow_forward_ios, color: AppTheme.primary,),
                 onTap: () {

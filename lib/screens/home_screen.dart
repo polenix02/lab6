@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Componentes de flutter 1'),
+          title: const Text('Lab6'),
           elevation: 0,
           //backgroundColor: Colors.green,
         ),
@@ -22,8 +22,6 @@ class HomeScreen extends StatelessWidget {
                   title: Text(AppRoutes.menuOptions[index].name),
                   trailing: const Icon(Icons.arrow_forward_ios_sharp, color: AppTheme.primary,),
                   onTap: () {
-                    //final route = MaterialPageRoute(builder: (context) => const CardScreen());
-                    //Navigator.push(context, route);
                     Navigator.pushNamed(
                         context, AppRoutes.menuOptions[index].route);
                   },
